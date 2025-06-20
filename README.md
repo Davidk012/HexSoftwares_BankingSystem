@@ -1,67 +1,70 @@
-Project Overview
-This Java application implements a simple banking system that allows customers to perform basic banking operations such as deposits, withdrawals, and balance checks. The system is designed with object-oriented principles to ensure clean separation of concerns.
+1. Add a Table of Contents
+Helps users quickly navigate to sections.
 
-Features
-Account Management
+Markdown
+## Table of Contents
+- [Project Overview](#project-overview)
+- [Features](#features)
+- [Class Structure](#class-structure)
+- [How to Run the Application](#how-to-run-the-application)
+- [Sample Usage](#sample-usage)
 
-Create bank accounts with initial balances
 
-Deposit funds with validation
+2. Expand the Overview
+Briefly explain the project's motivation and intended users.
 
-Withdraw funds with overdraft protection
+Markdown
+## Project Overview
+HexSoftwares Banking System is a simple, console-based Java application that simulates basic banking operations for educational purposes. It is designed for students and beginners who want to learn object-oriented programming concepts and Java basics.
+3. Enhance Feature List
+Use bullet points with checkmarks or emojis for readability.
 
-Check current balance
+Markdown
+## Features
+- ✅ Create, deposit to, and withdraw from bank accounts
+- ✅ Overdraft protection and input validation
+- ✅ Customer profiles linked to accounts
+- ✅ User-friendly interactive console interface
+- ✅ Real-time transaction feedback and error handling
+4. Add a UML/Class Diagram (Optional but Useful)
+If possible, include a simple diagram or ASCII art to visualize class relationships.
 
-Customer Management
+5. Provide Example Usage
+Markdown
+## Sample Usage
+``console
+Welcome to HexSoftwares Banking System!
+1. Create Account
+2. Deposit Funds
+3. Withdraw Funds
+4. Check Balance
+5. Exit
+Choose an option: 1
+Enter customer name: Jane Doe
+Account created! Your account number is 1001.
+Code
 
-Create customer profiles linked to bank accounts
+---
 
-Access customer information (ID, name, account details)
+### 6. Give Clearer Setup and Run Instructions  
+Include prerequisites and step-by-step instructions.
 
-Interactive Console Interface
+'''markdown
+## How to Run the Application
 
-User-friendly menu system
+### Prerequisites
+- Java JDK 8 or higher
+- Apache NetBeans (or any Java IDE)
 
-Real-time transaction feedback
+## Steps
+1. Clone the repository:
+git clone https://github.com/Davidk012/HexSoftwares_BankingSystem.git
 
-Error handling for invalid inputs
+Code
+2. Open the project in your IDE.
+3. Build and run `SimpleBankingSystem.java`.
 
-Class Structure
-BankAccount Class
+Alternatively, compile and run from command line:
+javac EnchancedBankingSystem.java java EnchancedBankingSystem
 
-accountNumber: Unique account identifier (immutable)
 
-balance: Current account balance
-
-Methods:
-
-deposit(amount): Adds funds to account
-
-withdraw(amount): Deducts funds with validation
-
-getBalance(): Returns current balance
-
-Customer Class
-
-customerId: Unique customer identifier
-
-name: Customer's full name
-
-account: Associated BankAccount instance
-
-Methods:
-
-deposit()/withdraw(): Proxy to account methods
-
-checkBalance(): Returns account balance
-
-SimpleBankingSystem Class (Main)
-
-Creates sample customer (Tshepiso Kekana)
-
-Provides interactive console menu
-
-Handles user input and operations
-
-How to Run the Application
-Use Apache NetBeans
